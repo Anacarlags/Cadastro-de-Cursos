@@ -1,0 +1,15 @@
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    background-color: #d811a6f5;
+    height: 80px;
+
+    
+}
+.container-logo  .logo{
+   margin-top: 10px;
+
+}
