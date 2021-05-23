@@ -10,14 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class CursoReadComponent implements OnInit {
 
   curso: Curso[] = [];
-  displayedColumns = ['id', 'name', 'Inicio', 'Termino', 'Duracao']
-
+  displayedColumns = ['id', 'name', 'Inicio', 'Termino', 'Duracao'];
+  
 
 
   constructor(private cursoService: CursoService) { }
 
   ngOnInit(): void {
-    this.cursoService.read().subscribe(curso => {
+    this.cursoService.read().subscribe((curso: Curso []) => {
       this.curso = curso
    })
   }

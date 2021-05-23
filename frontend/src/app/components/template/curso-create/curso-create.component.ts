@@ -1,6 +1,6 @@
 import { CursoService } from '/home/anacarlags/testeAnaCarlaAllyHub/frontend/src/app/components/cursos/curso.service'
 import { Curso } from './../../curso.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-curso-create',
@@ -9,12 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoCreateComponent implements OnInit {
 
-  curso: Curso = {
-    name: "",
+  curso : Curso ={
+    name: '',
     duracao: null as any,
-    inicio: "",
-    termino:"" ,
-    description: ""
+    inicio: '',
+    termino: ''
   }
 
   constructor(private cursosService: CursoService) { }
@@ -26,7 +25,7 @@ export class CursoCreateComponent implements OnInit {
  
   createCurso(): void{
     this.cursosService.create(this.curso).subscribe(() => {
-      this.cursosService.showMessage("Produto Criado com Sucesso")
+      this.cursosService.showMessage("Curso Cadastrado com Sucesso")
     })
    }
 

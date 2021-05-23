@@ -5,6 +5,7 @@
       "name": "Inglês",
       "duracao": 56,
       "inicio": "17-05-2021",
+      "termino": "23-08-2021",
       "description": "3 semanas em Toronto"
     },
     {
@@ -12,23 +13,29 @@
       "name": "Inglês",
       "duracao": 3,
       "inicio": "17-05-2021",
+      "termino": "25/12/2021",
       "description": "8 semanas em Toronto"
     },
     {
-      "name": "Aninha",
-      "duracao": null,
+      "name": "Portguês para Americanos",
+      "duracao": "80",
       "inicio": "",
       "termino": "",
-      "description": "Portuguese language and literature Portuguese",
       "id": 3
     },
     {
-      "name": "Poruguês",
-      "duracao": null,
+      "name": "Ana Carla Gomes Da Silva",
+      "duracao": "89",
       "inicio": "",
       "termino": "",
-      "description": "",
       "id": 4
+    },
+    {
+      "name": "teste",
+      "duracao": "52",
+      "inicio": "",
+      "termino": "",
+      "id": 5
     }
   ]
 }
