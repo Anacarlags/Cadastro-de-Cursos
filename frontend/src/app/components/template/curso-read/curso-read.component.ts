@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CursoReadComponent implements OnInit {
 
   curso: Curso[] = [];
-  displayedColumns = ['id', 'name', 'Inicio', 'Termino', 'Duracao'];
+  displayedColumns = ['id', 'name','Duracao', 'Inicio', 'Termino'];
   
 
 

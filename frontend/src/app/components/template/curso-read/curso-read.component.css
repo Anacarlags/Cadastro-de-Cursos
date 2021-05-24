@@ -12,8 +12,26 @@ table{
  
 }
 
+.titulo-listar{
+    margin: 90px;
+}
+
+button{
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+}
 h1{
-    text-align: center;
+     
+     width: 350px;
+     border-radius: 5px;
     font-weight: 500;
     color: crimson;
+
+   
 }

@@ -18,12 +18,23 @@ import {MatIconModule} from '@angular/material/icon'
 
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/core';
 import { CursoReadComponent } from './components/template/curso-read/curso-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { FooterComponent } from './components/template/footer/footer.component';
+
+
+
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
+
+registerLocaleData(localePt, 'pt-BR');
 
 @NgModule({
   declarations: [
@@ -50,9 +61,12 @@ import { FooterComponent } from './components/template/footer/footer.component';
     MatNativeDateModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{
+    provide: LOCALE_ID ,
+    useValue: 'pt-BR',
+  }],
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }

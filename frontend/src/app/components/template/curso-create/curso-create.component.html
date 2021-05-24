@@ -7,14 +7,14 @@
         </mat-form-field>
             <mat-form-field appearance="fill">
                 <mat-label>Data de Inicio</mat-label>
-                <input placeholder="DD/MM/YYYY" matInput [matDatepicker]="picker" [(ngModel)]="curso.inicio" >
+                <input placeholder="DD/MM/YYYY" matInput [matDatepicker]="picker" toLocaleDateString [(ngModel)]="curso.inicio" name="inicio" >
                 <mat-datepicker-toggle matSuffix  [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
 
             <mat-form-field appearance="fill">
                 <mat-label>Data de Termino</mat-label>
-                <input placeholder="DD/MM/YYYY" matInput [matDatepicker]="picker2" [(ngModel)]="curso.termino" >
+                <input placeholder="DD/MM/YYYY" matInput [matDatepicker]="picker2" [(ngModel)]="curso.termino" name="termino">
                 <mat-datepicker-toggle matSuffix  [for]="picker2"></mat-datepicker-toggle>
                 <mat-datepicker #picker2></mat-datepicker>
             </mat-form-field>
